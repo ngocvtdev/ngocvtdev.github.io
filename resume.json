@@ -1,0 +1,107 @@
+{
+  "selectedTemplate": 6,
+  "headings": {
+    "work": "Experience",
+    "projects": "Certifications",
+    "awards": "Skills",
+    "education": "Education",
+    "skills": "Tech Stack"
+  },
+  "basics": {
+    "email": "ngocvt.dev@gmail.com",
+    "website": "linkedin.com/in/felix-vo",
+    "location": {
+      "address": "Singapore"
+    },
+    "name": "Felix Vo",
+    "phone": "+65 90787409"
+  },
+  "education": [
+    {
+      "institution": "HCMC University Of Technical Education",
+      "location": "Vietnam",
+      "studyType": "BS",
+      "startDate": "Aug 2011",
+      "endDate": "Aug 2015",
+      "area": "Information Technology"
+    },
+    {}
+  ],
+  "work": [
+    {
+      "company": "INTELLLEX",
+      "location": "Singapore",
+      "position": "Software Engineer",
+      "website": "https://intelllex.com",
+      "startDate": "Jan 2020",
+      "endDate": "Present",
+      "highlights": [
+        "Run performance tests for the purposes of isolating areas for improvement, and general debugging.",
+        "Collaborate with data/frontend developers and designers to implement new product features.",
+        "Performance tuning and optimized services' API"
+      ]
+    },
+    {
+      "highlights": [
+        "Developed backend services for in-house payment gateway and products which run across 20+ markets globally.",
+        "Integrated external payment aggregators (TPay, Vodafone,...) with in-house payment gateway",
+        "Train, manage and provide guidance to junior software engineers"
+      ],
+      "company": "MobiClix Pte LTD",
+      "position": "Software Engineer",
+      "location": "Vietnam",
+      "startDate": "May 2018",
+      "endDate": "Sep 2019"
+    },
+    {
+      "highlights": [
+        "Developed scalable backend services for 360Live video streaming app which reaches 1M users in the first year.",
+        "Built an in-house operation tool and analytic dashboard.",
+        "Developed an in-house marketing tracking system, collecting user data, and mapping with data from various ads platform.",
+        "Integrate tracking system with Google Adwords, Facebook Ads, and Coccoc Ads.",
+        "Developed an analytic dashboard to measuring the ROI of the advertising campaign."
+      ],
+      "company": "VNG",
+      "position": "Software Engineer",
+      "website": "https://www.vng.com.vn",
+      "location": "Vietnam",
+      "startDate": "Oct 2015",
+      "endDate": "May 2018"
+    }
+  ],
+  "skills": [],
+  "projects": [
+    {
+      "keywords": [
+        ""
+      ],
+      "name": "Neo4j Certified Professional"
+    }
+  ],
+  "awards": [
+    {
+      "summary": "Tech Stack: Java, Go, Kafka, RabbitMQ, Microservice, MySQL, Redis, gRPC, Elasticsearch"
+    },
+    {
+      "summary": "Strong understanding of software architecture, OO principles and common design patterns."
+    },
+    {
+      "summary": "Distributed and large scale systems web development experience."
+    },
+    {
+      "summary": "Skilled in performance tuning, query plan / explain plan analysis, indexing, table partitioning"
+    },
+    {
+      "summary": "Good knowledge of Database technologies – RDBMS/NoSQL/Graph."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "skills",
+    "education",
+    "projects",
+    "awards"
+  ]
+}

@@ -1,74 +1,66 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JWT Decoder</title>
     <style>
-      .container {
+    .container {
         width: 100%;
-      }
-      .token {
+    }
+
+    .token {
         width: 49%;
         min-width: 400px;
         height: 100%;
         min-height: 300px;
-      }
+    }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <textarea
-        class="token"
-        name="token-input"
-        id="token-input"
-        cols="30"
-        rows="10"
-      ></textarea>
-      <textarea
-        class="token"
-        name="token-parsed"
-        id="token-parsed"
-        cols="30"
-        rows="10"
-      ></textarea>
-    </div>
+</head>
 
+<body>
+    <div class="container">
+        <textarea class="token" name="token-input" id="token-input" cols="30" rows="10"></textarea>
+        <textarea class="token" name="token-parsed" id="token-parsed" cols="30" rows="10"></textarea>
+    </div>
     <script src="https://unpkg.com/jwt-js-decode"></script>
     <script>
-      function setJWTParsed(jwt) {
+    function setJWTParsed(jwt) {
         document.getElementById("token-parsed").value = JSON.stringify(
-          jwt,
-          null,
-          2
+            jwt,
+            null,
+            2
         );
-      }
-      function loadPreviousToken() {
+    }
+
+    function loadPreviousToken() {
         let token = localStorage.getItem("jwttoken");
         if (token) {
-          document.getElementById("token-input").value = token;
-          let jwt = jwtJsDecode.jwtDecode(token);
-          setJWTParsed(jwt);
-        }
-      }
-      // load previous token
-      loadPreviousToken();
-
-      // bind on token input change event
-      let textareaID = document.getElementById("token-input");
-      textareaID.addEventListener("input", function() {
-        if (textareaID.value.length) {
-          let token = document.getElementById("token-input").value;
-          try {
+            document.getElementById("token-input").value = token;
             let jwt = jwtJsDecode.jwtDecode(token);
             setJWTParsed(jwt);
-            // store in local store
-            localStorage.setItem("jwttoken", token);
-          } catch (error) {
-            setJWTParsed(error);
-          }
         }
-      });
+    }
+    // load previous token
+    loadPreviousToken();
+
+    // bind on token input change event
+    let textareaID = document.getElementById("token-input");
+    textareaID.addEventListener("input", function() {
+        if (textareaID.value.length) {
+            let token = document.getElementById("token-input").value;
+            try {
+                let jwt = jwtJsDecode.jwtDecode(token);
+                setJWTParsed(jwt);
+                // store in local store
+                localStorage.setItem("jwttoken", token);
+            } catch (error) {
+                setJWTParsed(error);
+            }
+        }
+    });
     </script>
-  </body>
+</body>
+
 </html>
